@@ -1,0 +1,52 @@
+# Bytecode
+*.class
+
+# Common Java build directories
+/build/
+/out/
+/bin/
+# Eclipse specific files
+.classpath
+.project
+# IntelliJ IDEA specific files
+.idea/
+# NetBeans specific files
+/nbproject/
+# Maven specific files
+/target/
+# Gradle specific files
+.gradle/
+# JAR files
+*.jar
+# Log files
+*.log
+# Temporary files
+*.tmp
+# OS generated files
+.DS_Store
+# Windows specific files
+Thumbs.db
+# Backup files
+*~
+# IDE specific files
+*.iml
+# Coverage reports
+/coverage/
+# Javadoc output
+/javadoc/
+# Configuration files
+*.cfg
+# Dependency directories
+/lib/
+# Test output directories
+/test-output/
+# Miscellaneous
+*.swp
+# Local configuration files
+*.local
+# Python virtual environments
+*.venv
+# Python cache files
+__pycache__/
+# Python bytecode
+*.pyc
