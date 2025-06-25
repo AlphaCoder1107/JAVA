@@ -1,0 +1,1 @@
+javac CAR/*.java && java CAR.Driver

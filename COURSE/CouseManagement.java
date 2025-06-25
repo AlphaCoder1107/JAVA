@@ -6,3 +6,12 @@
  * License  : MIT License
  */
 
+package COURSE;
+
+public class CouseManagement {
+
+        public static void main(String[] args) {
+
+            
+        }
+}

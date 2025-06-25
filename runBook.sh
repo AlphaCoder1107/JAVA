@@ -1,0 +1,1 @@
+javac BOOK/*.java && java BOOK.Library
