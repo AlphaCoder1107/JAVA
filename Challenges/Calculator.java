@@ -86,7 +86,7 @@ public class Calculator { // Defines the Calculator class
                 System.out.println("Result: " + result); // Prints result
             }
             case 3 -> {
-                result = calc.calculationMul("num1, num2); // Calls multiplication
+                result = calc.calculationMul(num1, num2); // Calls multiplication
                 System.out.println("Result: " + result); // Prints result
             }
             case 4 -> {
