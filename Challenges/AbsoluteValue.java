@@ -6,13 +6,13 @@
  * License  : MIT License
  */
 
-package Challenges;
+package Challenges; // Declares the package name
 
-public class AbsoluteValue {
-    
-    public static void main(String[] args) {
+public class AbsoluteValue { // Defines the class
+
+    public static void main(String[] args) { // Main method, entry point
         int number = -10; // Example number
-        int absoluteValue = (number < 0) ? -number : number; // Ternary operator to find the absolute value
-        System.out.println("The absolute value of " + number + " is: " + absoluteValue);
+        int absoluteValue = (number < 0) ? -number : number; // Ternary operator for absolute value
+        System.out.println("The absolute value of " + number + " is: " + absoluteValue); // Prints result
     }
 }

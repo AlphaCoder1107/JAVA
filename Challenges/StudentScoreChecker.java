@@ -6,18 +6,18 @@
  * License  : MIT License
  */
 
-package Challenges;
+package Challenges; // Declares the package name
 
-import java.util.Scanner;
+import java.util.Scanner; // Imports Scanner class for user input
 
-public class StudentScoreChecker {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter the score of the student: ");
-        int score = input.nextInt();
-        // Use nested ternary operator for clear categorization
+public class StudentScoreChecker { // Defines the class
+    public static void main(String[] args) { // Main method, entry point
+        Scanner input = new Scanner(System.in); // Creates Scanner object for input
+        System.out.print("Enter the score of the student: "); // Prompts for score
+        int score = input.nextInt(); // Reads score
+        // Nested ternary operator for grade categorization
         String grade = (score >= 80) ? "High" : (score >= 50 ? "Moderate" : "Low");
-        System.out.println("The grade of the student is: " + grade);
-        input.close(); // Close the scanner to prevent resource leaks
+        System.out.println("The grade of the student is: " + grade); // Prints grade
+        input.close(); // Closes Scanner to prevent resource leaks
     }
 }
