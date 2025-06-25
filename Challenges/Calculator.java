@@ -11,13 +11,11 @@ package Challenges; // Declares the package name
 import java.util.*; // Imports all classes from java.util, including Scanner
 
 public class Calculator { // Defines the Calculator class
-
-    String Addition, Subtraction, Multiplication, Division; // Operation names
+    
     int num1, num2, result; // Operands and result
 
     // Method for addition
-    public int calculationAdd(String Addition, int num1, int num2) {
-        this.Addition = Addition; // Stores operation name
+    public int calculationAdd(int num1, int num2) {
         this.num1 = num1; // Stores first operand
         this.num2 = num2; // Stores second operand
         result = num1 + num2; // Performs addition
@@ -25,8 +23,7 @@ public class Calculator { // Defines the Calculator class
     }
 
     // Method for subtraction
-    public int calculationSub(String Subtraction, int num1, int num2) {
-        this.Subtraction = Subtraction; // Stores operation name
+    public int calculationSub(int num1, int num2) {
         this.num1 = num1; // Stores first operand
         this.num2 = num2; // Stores second operand
         result = num1 - num2; // Performs subtraction
@@ -34,8 +31,7 @@ public class Calculator { // Defines the Calculator class
     }
 
     // Method for multiplication
-    public int calculationMul(String Multiplication, int num1, int num2) {
-        this.Multiplication = Multiplication; // Stores operation name
+    public int calculationMul(int num1, int num2) {
         this.num1 = num1; // Stores first operand
         this.num2 = num2; // Stores second operand
         result = num1 * num2; // Performs multiplication
@@ -43,8 +39,7 @@ public class Calculator { // Defines the Calculator class
     }
 
     // Method for division
-    public int calculationDiv(String Division, int num1, int num2) {
-        this.Division = Division; // Stores operation name
+    public int calculationDiv(int num1, int num2) {
         this.num1 = num1; // Stores first operand
         this.num2 = num2; // Stores second operand
         if (num2 != 0) { // Checks for division by zero
@@ -62,13 +57,12 @@ public class Calculator { // Defines the Calculator class
 
         System.out.println("Welcome to the Calculator!"); // Welcome message
         System.out.println("You can perform the following operations:"); // Info message
-        Scanner operations = new Scanner(System.in); // Scanner for operation selection
         System.out.println("1. Addition"); // Option 1
         System.out.println("2. Subtraction"); // Option 2
         System.out.println("3. Multiplication"); // Option 3
         System.out.println("4. Division"); // Option 4
         System.out.println("Please select an operation by entering the corresponding number (1-4):"); // Prompt
-        int operation = operations.nextInt(); // Reads operation choice
+        int operation = input.nextInt(); // Reads operation choice
         if (operation < 1 || operation > 4) { // Checks for valid operation
             System.out.println("Invalid operation selected. Please restart the program and select a valid operation."); // Error
                                                                                                                         // message
@@ -84,22 +78,22 @@ public class Calculator { // Defines the Calculator class
         int result = 0; // Stores result
         switch (operation) { // Switch for operation
             case 1 -> {
-                result = calc.calculationAdd("Addition", num1, num2); // Calls addition
+                result = calc.calculationAdd(num1, num2); // Calls addition
                 System.out.println("Result: " + result); // Prints result
             }
             case 2 -> {
-                result = calc.calculationSub("Subtraction", num1, num2); // Calls subtraction
+                result = calc.calculationSub(num1, num2); // Calls subtraction
                 System.out.println("Result: " + result); // Prints result
             }
             case 3 -> {
-                result = calc.calculationMul("Multiplication", num1, num2); // Calls multiplication
+                result = calc.calculationMul("num1, num2); // Calls multiplication
                 System.out.println("Result: " + result); // Prints result
             }
             case 4 -> {
-                result = calc.calculationDiv("Division", num1, num2); // Calls division
+                result = calc.calculationDiv(num1, num2); // Calls division
                 System.out.println("Result: " + result); // Prints result
             }
-            default -> System.out.println("Invalid operation selected."); // Default case
+            //default case not require because We already checked it in IF-ELSE
         }
 
         input.close(); // Closes Scanner
