@@ -10,7 +10,7 @@ import java.util.*;
 public class LeapYear{
   public static void main (String[] args){
     Scanner input = new Scanner (System.in);
-    System.out.print("Enter the Year");
+    System.out.print("Enter the Year: ");
     int Year = input.nextInt();
     if(Year % 400 == 0){
             System.out.println("Given year is a Leap year");

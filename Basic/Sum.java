@@ -7,10 +7,14 @@
  */
 
 public class Sum{
+  public Sum() {
+  }
+
   public static void main (String[] args){
   int a,b,c;
   a = 12;
   b = 15;
   c = a + b;
+  System.out.printf("The total of values are: %d", c);
   }
 }
