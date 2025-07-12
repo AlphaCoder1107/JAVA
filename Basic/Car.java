@@ -6,9 +6,10 @@
  * License  : MIT License
  */
 
-class Car {
+public class Car {
     // 1. Property Declaration
     int wheels;
+
 
     // 2. Constructor
     Car() {
